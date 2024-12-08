@@ -1,0 +1,39 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="login-container">
+
+    <ion-card class="login-card">
+      <ion-card-header>
+        <ion-card-title>Login to Your Account</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <ion-item lines="none" class="input-item">
+          <ion-icon name="mail-outline" slot="start" color="primary"></ion-icon>
+          <ion-input type="email" [(ngModel)]="email" placeholder="Email Address" required></ion-input>
+        </ion-item>
+
+
+        <ion-item lines="none" class="input-item">
+          <ion-icon name="lock-closed-outline" slot="start" color="primary"></ion-icon>
+          <ion-input type="password" [(ngModel)]="password" placeholder="Password" required></ion-input>
+        </ion-item>
+
+
+        <ion-button expand="full" color="primary" (click)="login()">Login</ion-button>
+        
+        <div class="signup-link">
+          <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+

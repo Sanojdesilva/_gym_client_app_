@@ -1,0 +1,19 @@
+<ion-content *ngIf="clientDetails; else loading">
+  <ion-item>
+    <ion-label><strong>Name:</strong></ion-label>
+    <ion-text>{{ clientDetails.name }}</ion-text>
+  </ion-item>
+  <ion-item>
+    <ion-label><strong>Email:</strong></ion-label>
+    <ion-text>{{ clientDetails.email }}</ion-text>
+  </ion-item>
+  <ion-item>
+    <ion-label><strong>Fitness Program:</strong></ion-label>
+    <ion-text>{{ clientDetails.fitness_program }}</ion-text>
+  </ion-item>
+</ion-content>
+
+<ng-template #loading>
+  <ion-spinner name="crescent"></ion-spinner>
+  <p class="ion-text-center">Loading client details...</p>
+</ng-template>

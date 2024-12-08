@@ -1,12 +1,9 @@
 /*
  * App Global CSS
  * ----------------------------------------------------------------------------
- * Put style rules here that you want to apply globally. These styles are for
- * the entire app and not just one component. Additionally, this file can be
- * used as an entry point to import other CSS/Sass files to be included in the
- * output CSS.
- * For more information on global stylesheets, visit the documentation:
- * https://ionicframework.com/docs/layout/global-stylesheets
+ * Modernizing UI design using principles like minimalism, readability,
+ * and smoother interactions. We'll implement cleaner typography, better spacing,
+ * more intuitive button styles, and a subtle material design approach.
  */
 
 /* Core CSS required for Ionic components to work properly */
@@ -35,3 +32,178 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+/* Global Body Styling */
+
+
+/* Ionic App Global Styles */
+
+
+body {
+  --background: #272c3d; /* Light ash*/
+  --ion-color-primary: #2a9d8f; /* Light blue */
+  --ion-color-secondary: #0036a2; /* Dark blue */
+  --ion-color-tertiary: #f1f1f1; /* Light ash */
+  --ion-color-light: #ffffff; /* White */
+  --ion-color-dark: #000000; /* Black */
+  --ion-font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+
+  background-image: url('assets/img/GymBoy.jpg');
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.289);
+}
+
+.home-con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+
+  background-image: url('assets/img/GymBoy.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+ion-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px; /* Adding spase */
+  height: 100%;
+
+}
+
+ion-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  margin-top: auto;
+  background-color: var(--ion-color-light);
+  overflow: hidden;
+  padding: 20px;
+  justify-content: center;
+
+}
+
+
+ion-card-content {
+  padding: 20px;
+}
+
+
+ion-button {
+  --border-radius: 30px;
+  --padding-start: 25px;
+  --padding-end: 25px;
+  --font-size: 16px;
+  --box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+
+ion-button[color='primary'] {
+  background: linear-gradient(135deg, #2a9d8f, #34b6b6);
+  color: var(--ion-color-light);
+}
+
+ion-button[color='secondary'] {
+  background: linear-gradient(135deg, #0036a2, #0066cc);
+  color: var(--ion-color-light);
+}
+
+ion-button[color='tertiary'] {
+  background-color: var(--ion-color-tertiary);
+  color: var(--ion-color-dark);
+}
+
+
+ion-header {
+  --background: var(--ion-color-secondary); /* Dark blu backgrund */
+  --color: var(--ion-color-light);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+ion-toolbar {
+  --background: var(--ion-color-secondary); /* Dark blu */
+  --box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+ion-title {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--ion-color-light);
+  padding-left: 65px; /* Spasing from left */
+}
+
+ion-item {
+  --padding-start: 20px;
+  --padding-end: 20px;
+  margin-bottom: 20px;
+  background-color: var(--ion-color-light); /* White background */
+  border-radius: 15px; /* Rounded corners for input fields */
+}
+
+ion-label {
+  font-weight: bold;
+  color: var(--ion-color-dark);
+}
+
+
+ion-text {
+  font-size: 16px;
+  color: var(--ion-color-light);
+}
+
+
+ion-card {
+  margin: 10px auto;
+  padding: 15px;
+}
+
+ion-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+ion-input {
+  --padding-start: 20px;
+  --padding-end: 20px;
+  background-color: transparent;
+  color: var(--ion-color-light);
+  border-radius: 10px;
+}
+
+
+ion-icon {
+  color: var(--ion-color-secondary);
+}
+
+
+.footer-links ion-button {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: var(--ion-color-secondary);
+}
+

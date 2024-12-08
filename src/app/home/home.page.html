@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="home-con">
+  <ion-grid class="home-container">
+    <ion-row justify-content-center>
+      <ion-col size="12" size-md="6" offset-md="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Welcome to Your Gym App</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <ion-button expand="full" color="primary" (click)="navigateToClientDetails()">View My Details</ion-button>
+            <ion-button expand="full" color="secondary" (click)="navigateToWorkoutPlan()">View My Workout Plan</ion-button>
+            <ion-button expand="full" color="tertiary" (click)="navigateToPrivacy()">Privacy Policy</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+</ion-content>
+
+<ion-footer>
+  <ion-button expand="full" color="danger" (click)="logout()">Log Out</ion-button>
+</ion-footer>
+

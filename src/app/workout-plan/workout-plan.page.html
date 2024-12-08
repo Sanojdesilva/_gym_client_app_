@@ -1,0 +1,21 @@
+
+<ion-content>
+
+  <ion-list *ngIf="workoutPlan.length > 0; else noWorkouts">
+    <ion-item *ngFor="let workout of workoutPlan">
+      <ion-label>
+        <h2>{{ workout.exercise_name }}</h2>
+        <p>{{ workout.description }}</p>
+        <p><strong>Day:</strong> {{ workout.day }}</p>
+        <p><strong>Sets:</strong> {{ workout.sets.join(', ') }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+
+  <ng-template #noWorkouts>
+    <div class="ion-padding">
+      <p>No workouts available.</p>
+    </div>
+  </ng-template>
+</ion-content>
